@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>olk_form</title>
+
+        <script>
+
+            function display(){
+
+                let name1=document.getElementsByClassName("name")[0];
+                document.getElementById("d1").innerHTML=name1.Value;
+            }
+        </script>
+
+        <style>
+           
+        
+            
+            h1{
+                text-align: center;
+                
+
+            }
+            form{
+                margin:0% auto;
+                padding: 12px;
+                width: 500px;
+                border: 1px solid;
+                background-color: white;
+                border-radius: 4px;
+                box-shadow:0 0 10px red;
+            } 
+
+            #name,#email,#gender {
+                    width: 500px;
+
+            }
+            button{
+                background-color: rgb(55, 182, 55);
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <h1>olk_form</h1>
+
+        <form>
+            <label>Name :</label><br>
+            <input class="name" type="text"> <br> <br>
+
+            <label> Email :</label> <br>
+            <input id="email" type="emil"> <br> <br>
+
+            <label> Phone :</label> <br>
+            <input id="phone" type="text"><br> <br>
+
+            <label> Gender :</label><br>
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>outher</option>
+            </select><br> <br>
+
+            <button onclick="display()">submit</button>
+        </form>
+
+        <p id="d1"></p>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+  </head>
+  <body style="text-align:center;">
+    <img src="hello.jpg" alt="An owl picture" style="width:50%;">
+    <br><br>
+    <form>
+      <label for="username" style="color:red;font-weight:bold;">Username:</label>
+      <input type="text" id="username" name="username" style="background-color:yellow;font-weight:bold;">
+      <br><br>
+      <label for="password" style="color:red;font-weight:bold;">Password:</label>
+      <input type="password" id="password" name="password" style="background-color:yellow;font-weight:bold;">
+      <button type="button" onclick="togglePassword()" style="background-color:blue;color:white;font-weight:bold;">Show Password</button>
+      <br><br>
+      <input type="submit" value="Login" style="background-color:green;color:white;font-weight:bold;">
+    </form>
+    
+    <script>
+      function togglePassword() {
+        var passwordField = document.getElementById("password");
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+        } else {
+          passwordField.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
